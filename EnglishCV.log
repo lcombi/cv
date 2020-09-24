@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.20)  24 FEB 2020 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.20)  20 SEP 2020 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,27 +351,39 @@ Package: collection 2013/03/28 v1.0.0 collections
 \cvcolumnsautowidth=\skip62
 \cvcolumnautowidth=\skip63
 \bibindent=\skip64
-) (./moderncvstyleclassic.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks16
+\SOUL@lasttoken=\toks17
+\SOUL@cmds=\toks18
+\SOUL@buffer=\toks19
+\SOUL@token=\toks20
+\SOUL@spaceskip=\skip65
+\SOUL@ttwidth=\dimen138
+\SOUL@uldp=\dimen139
+\SOUL@ulht=\dimen140
+)
+(./moderncvstyleclassic.sty
 Package: moderncvstyleclassic 2013/02/09 v1.3.0 modern curriculum vitae and let
 ter style scheme: classic
-
-(./moderncviconsmarvosym.sty
+ (./moderncviconsmarvosym.sty
 Package: moderncviconsmarvosym 2013/02/09 v1.3.0 modern curriculum vitae and le
 tter icons: marvosym
 )
-\quotewidth=\skip65
-\hintscolumnwidth=\skip66
-\separatorcolumnwidth=\skip67
-\maincolumnwidth=\skip68
-\doubleitemmaincolumnwidth=\skip69
-\listitemsymbolwidth=\skip70
+\quotewidth=\skip66
+\hintscolumnwidth=\skip67
+\separatorcolumnwidth=\skip68
+\maincolumnwidth=\skip69
+\doubleitemmaincolumnwidth=\skip70
+\listitemsymbolwidth=\skip71
 LaTeX Font Info:    Try loading font information for U+mvs on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/marvosym/umvs.fd)
-\listitemmaincolumnwidth=\skip71
-\listdoubleitemmaincolumnwidth=\skip72
-\makecvtitlenamewidth=\skip73
-\baseletterheight=\skip74
+\listitemmaincolumnwidth=\skip72
+\listdoubleitemmaincolumnwidth=\skip73
+\makecvtitlenamewidth=\skip74
+\baseletterheight=\skip75
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
@@ -383,17 +395,17 @@ LaTeX Font Info:    Try loading font information for U+mvs on input line 68.
 . Redefining command \subsection with sig. 'sm' on line 165.
 .................................................
 \cvitemwithcommentmainbox=\box42
-\cvitemwithcommentmainlength=\skip75
-\cvitemwithcommentcommentlength=\skip76
+\cvitemwithcommentmainlength=\skip76
+\cvitemwithcommentcommentlength=\skip77
 )
-(./moderncvcolorpurple.sty
-Package: moderncvcolorpurple 2013/02/09 v1.3.0 modern curriculum vitae and lett
-er color scheme: purple
+(./moderncvcolororange.sty
+Package: moderncvcolororange 2013/02/09 v1.3.0 modern curriculum vitae and lett
+er color scheme: orange
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -724,15 +736,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count179
 \Gm@cntv=\count180
 \c@Gm@tempcnt=\count181
-\Gm@bindingoffset=\dimen138
-\Gm@wd@mp=\dimen139
-\Gm@odd@mp=\dimen140
-\Gm@even@mp=\dimen141
-\Gm@layoutwidth=\dimen142
-\Gm@layoutheight=\dimen143
-\Gm@layouthoffset=\dimen144
-\Gm@layoutvoffset=\dimen145
-\Gm@dimlist=\toks18
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks23
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -785,7 +797,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen146
+\@linkdim=\dimen149
 \Hy@linkcounter=\count182
 \Hy@pagecounter=\count183
 
@@ -815,10 +827,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count185
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen147
+\XeTeXLinkMargin=\dimen150
 \Fld@menulength=\count186
-\Field@Width=\dimen148
-\Fld@charsize=\dimen149
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -844,7 +856,7 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip77
+\Hy@SectionHShift=\skip78
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 50.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 50.
@@ -875,16 +887,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count192
-\scratchdimen=\dimen150
+\scratchdimen=\dimen153
 \scratchbox=\box43
 \nofMPsegments=\count193
 \nofMParguments=\count194
-\everyMPshowfont=\toks19
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count195
-\MPscratchDim=\dimen151
+\MPscratchDim=\dimen154
 \MPnumerator=\count196
 \makeMPintoPDFobject=\count197
-\everyMPtoPDFconversion=\toks20
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -979,7 +991,7 @@ LaTeX Info: Redefining \nameref on input line 50.
 \@outlinefile=\write3
 \openout3 = `EnglishCV.out'.
 
-\pagenumberwidth=\skip78
+\pagenumberwidth=\skip79
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 50.
 \makecvtitledetailsbox=\box45
@@ -1015,8 +1027,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
 \makecvtitlepicturebox=\box46
-\makecvtitledetailswidth=\skip79
-\makecvtitlepicturewidth=\skip80
+\makecvtitledetailswidth=\skip80
+\makecvtitlepicturewidth=\skip81
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--53
 
@@ -1032,25 +1044,35 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 56.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 268.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 268.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 201.
 
-(./EnglishCV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 268.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 268.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [4] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
+ (./EnglishCV.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
 Package rerunfilecheck Info: File `EnglishCV.out' has not changed.
-(rerunfilecheck)             Checksum: E96C8A381EE1358F3F9B30D785446591;3169.
+(rerunfilecheck)             Checksum: 6EDB4D7B84542870C1451B8B216B2A2B;3169.
  ) 
 Here is how much of TeX's memory you used:
- 20315 strings out of 492982
- 346966 string characters out of 6134896
- 439408 words of memory out of 5000000
- 23633 multiletter control sequences out of 15000+600000
- 591329 words of font info for 86 fonts, out of 8000000 for 9000
+ 20531 strings out of 492982
+ 349728 string characters out of 6134896
+ 442925 words of memory out of 5000000
+ 23837 multiletter control sequences out of 15000+600000
+ 592062 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,45p,10361b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,45p,10378b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share
 /texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm
@@ -1058,11 +1080,12 @@ ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share
 /fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss1
 7.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on EnglishCV.pdf (6 pages, 154984 bytes).
+fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/marvosym/marvosym.pfb>
+Output written on EnglishCV.pdf (6 pages, 179350 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 188 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  31 named destinations out of 1000 (max. 500000)
- 20673 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 21185 words of extra memory for PDF output out of 24883 (max. 10000000)
 

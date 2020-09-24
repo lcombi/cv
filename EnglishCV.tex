@@ -7,10 +7,10 @@
 
 
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
+\usepackage{soul}
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -62,7 +62,7 @@
 \cvitem{}{Supervisor: Gustavo E. Romero.}
 
 \section{Current position}
-\cventry{2017-Present}{Doctoral Fellow}{CONICET}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2017-Present}{Ph.D Fellow}{CONICET}{}{}{}  % arguments 3 to 6 can be left empty
 \cvitem{}{Supervisor: Gustavo E. Romero.}
 \cvitem{}{Research field: gravitation, General Relativity, cosmology, black holes, local physics and cosmology, astrophysics, foundations of physics, scientific philosophy.}
 \cvitem{}{Place: Instituto Argentino de Radioastronomía, Bs.As., Argentina}
@@ -71,6 +71,10 @@
 \cventry{2017}{Elements of Quantum Field Theory I}{}{}{}{}  % arguments 3 to 6 can be left empty
 \cvitem{}{Department of Physics, Faculty of Exact Sciences, UNLP}
 \cvitem{}{Professor: Horacio Falomir}
+\cvitem{}{Duration: 1 semester}
+\cventry{2020}{Precision Cosmology}{}{}{}{}  % arguments 3 to 6 can be left empty
+\cvitem{}{Faculty of Astronomy and Geophysics, UNLP}
+\cvitem{}{Professor: Claudia Scoccola}
 \cvitem{}{Duration: 1 semester}
 
 \section{Fellowships}
@@ -117,13 +121,15 @@
 
 \cvitem{2019}{\textit{North American Einstein Toolkit Workshop}, (RIT). \textbf{Place:} Rochester, USA. \textbf{Duration:} 3 days. \textbf{Funding:} CCRG-RIT}
 
+\cvitem{2020}{\textit{TCAN on Binary Neutron Stars}, (RIT). \textbf{Place:} Rochester, USA. \textbf{Duration:} 5 days.}
+
 \section{Research stays abroad}
 
 \cvitem{2018}{\textit{West Virginia University},
 \textbf{Place:} Morgantown, West Virginia, USA.
 \textbf{Duration} 1 month,
 \textbf{Funding:} NANOGrav Collaboration,
-\textbf{Project:} Timing of milisecond pulsar J0437-4715, with Michael Lam and Maura Mclauhglin}
+\textbf{Project:} Timing of milisecond pulsar J0437-4715, with Michael Lam and Maura McLauhglin}
 
 \cvitem{2019}{\textit{Rochester Institute of Technology},
 \textbf{Place:} Rochester, NY, USA,
@@ -131,11 +137,11 @@
 \textbf{Funding:} Center for Computational Relativity and Gravitation, RIT,
 \textbf{Project:} MHD simulations of spinning binary black hole systems, with Manuela Campanelli.}
 
-\cvitem{2020}{\textit{Perimeter Institute},
+\cvitem{2021}{\textit{Perimeter Institute},
 \textbf{Place:} Waterloo, Canada,
 \textbf{Duration} 4 months,
-\textbf{Funding:} Visiting Fellowhsip, PI,
-\textbf{Project:} Modelling radio emission in transient phenomena, with Daniel Siegel.}
+\textbf{Funding:} Visiting Fellowhship, PI,
+\textbf{Project:} Modelling fast ejecta emission from binary neutron star mergers, with Daniel Siegel.}
 
 
 \section{Scientific meetings}
@@ -167,7 +173,7 @@
 \cvitem{}{Luciano Combi, Jorge Combi, Federico García, Guillermo Gancio, Carlos Lousto}
 \cvitem{}{Anual Meeting of the Asocaci\'on Argentina de Astronom\'ia (AAA), September 2017}
 
-\cvitem{2018}{\textit{Orbits in inhomogenous expanding space-times}}
+\cvitem{2018}{\textit{Orbits in inhomogeneous expanding space-times}}
 \cvitem{}{Luciano Combi, Eduardo Guti\'errez}
 \cvitem{}{LAPIS: Cosmology in the era of large surveys, April, 2018}
 
@@ -189,7 +195,11 @@
 \cvitemwithcomment{}{French}{}
 
 \section{Programming}
-\cvitem{}{Mathematica (advanced), Python, C}
+\cvitem{}{Mathematica, Python, C/C++, Linux}
+
+\section{Observational experience}
+\cvitem{}{Radio observations of \textit{pulsars} with single dish Antennas at the Argentine Institute of Radioastronomy. Reduction and analysis of data. Software usage: \texttt{PRESTO},\texttt{PSRCHIVE},\texttt{Enterprise},\texttt{TEMPO2}}
+
 
 \section{Memberships}
 
@@ -214,45 +224,61 @@
 
 \section{Publications}
 
-\subsection{Chapter in books}
-
-\cventry{1}{Is space-time material?}{}{}{}{}
-\cvitem{}{Luciano Combi}
-\cvitem{}{\textit{Materialism today}, Syntheses-Springer, 2019 (Forthcoming)}
+\cvitem{}{11 papers in peer-reviewed international journals, 7 as first author. 1 book chapter}
 
 
 \subsection{Refereed papers in international journals}
 
-\cventry{1}{Inconsistency within the Everett interpretation of Quantum Mechanics}{}{}{}{}
+\cventry{2017}{Inconsistency within the Everett interpretation of Quantum Mechanics}{}{}{}{}
 \cvitem{}{Luciano Combi, Gustavo E. Romero.}
-\cvitem{}{\textit{Methateoria} (ISSN 1853-2322) \textbf{7}, 47-53, 2017}
+\cvitem{}{\textit{Methateoria} (ISSN 1853-2322) \textbf{7}, 47-53}
 
-\cventry{2}{Gravitational energy and radiation of a charged black hole}{}{}{}{}
+\cventry{2017}{Gravitational energy and radiation of a charged black hole}{}{}{}{}
 \cvitem{}{Luciano Combi, Gustavo E. Romero.}
-\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{34}, 195008, 2017}
+\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{34}, 195008}
 
-\cventry{3}{Is Teleparallel Gravity really equivalent to General Relativity?}{}{}{}{}
+\cventry{2018}{Is Teleparallel Gravity really equivalent to General Relativity?}{}{}{}{}
 \cvitem{}{Luciano Combi, Gustavo E. Romero.}
-\cvitem{}{\textit{Annalen der Physik}, 1700175, 2018}
+\cvitem{}{\textit{Annalen der Physik}, 1700175, (2018)}
 
-\cventry{4}{A note on geodesics in inhomogeneous expanding spacetimes}{}{}{}{}
+\cventry{2019}{A note on geodesics in inhomogeneous expanding spacetimes}{}{}{}{}
 \cvitem{}{D. Perez, G.E. Romero, Luciano Combi, E.M. Guti\'errez.}
-\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{36}, 055002, 2019}
+\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{36}, 055002}
 
-\cventry{5}{Electromagnetic fields and charges in expanding universes}{}{}{}{}
+\cventry{2019}{Electromagnetic fields and charges in expanding universes}{}{}{}{}
 \cvitem{}{Luciano Combi, Gustavo E. Romero}
-\cvitem{}{\textit{Physical Review D}, \textbf{99}, 064017, 2019}
+\cvitem{}{\textit{Physical Review D}, \textbf{99}, 064017}
 
-\cventry{6}{Upgraded antennas for pulsar observations in the Argentine Institute of Radio astronomy}{}{}{}{}
+\cventry{2020}{Upgraded antennas for pulsar observations in the Argentine Institute of Radio astronomy}{}{}{}{}
 \cvitem{}{G. Gancio, C.O. Lousto, Luciano Combi, S. del Palacio, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
-\cvitem{}{\textit{Astronomy and Astrophysics,633 (2020) A84}}
+\cvitem{}{\textit{Astronomy and Astrophysics, 633, A84 }}
 
-\cventry{7}{Rigid systems and the cosmic expansion}{}{}{}{}
+\cventry{2020}{Relativistic rigid systems and the cosmic expansion}{}{}{}{}
+\cvitem{}{Luciano Combi, Gustavo E. Romero}
+\cvitem{}{\textit{General Relativity and Gravitation}, 52:93}
+
+\cventry{2020}{Circumbinary Disk Accretion into Spinning Black Hole Binaries}{}{}{}{}
+\cvitem{}{F.G. Lopez Armengol, Luciano Combi, Manuela Campanelli, Scott Noble, Dennis Bowen, Mark Avara}
+\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
+
+\cventry{2020}{An approximate superimposed metric for spinning black hole binaries}{}{}{}{}
+\cvitem{}{Luciano Combi, F.G. Lopez Armengol, Manuela Campanelli, Scott Noble, Brennan Ireland, Mark Avara,Dennis Bowen, Hiroyuki Nakano}
+\cvitem{}{\textit{Physical Review D}, (In prep.)}
+
+\cventry{2020}{Accretion onto spinning black hole binaries}{}{}{}{}
+\cvitem{}{Luciano Combi, F.G. Lopez Armengol, Manuela Campanelli, Scott Noble, Mark Avara, Dennis Bowen}
+\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
+
+\cventry{2020}{PSR J0437-4715: The Argentine Institute of Radioastronomy 2019-2020 Observational Campaign}{}{}{}{}
+\cvitem{}{V. Sosa Fiscella, S. del Palacio, Luciano Combi, C.O. Lousto, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
+\cvitem{}{\textit{Astronomy and Astrophysics}, (In prep.)}
+
+\subsection{Chapter in books}
+
+\cventry{1}{Is space-time material?}{}{}{}{}
 \cvitem{}{Luciano Combi}
-\cvitem{}{\textit{General Relativity and Gravitation}, 2020 (Submitted)}
+\cvitem{}{\textit{Ontological and Epistemological Issues in Contemporary Materialism}, Syntheses-Springer, 2020 (Forthcoming)}
 
-
-\section{Observational experience}
 
 \subsection{Telegrams}
 
