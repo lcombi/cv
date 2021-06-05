@@ -10,7 +10,7 @@
 \usepackage{soul}
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -21,19 +21,11 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Luciano}{Combi}
-\title{}                               % optional, remove / comment the line if not wanted
-\address{D 80 n 930}{La Plata}{Argentina}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+54~(0221)~6389~686}                   % optional, remove / comment the line if not wanted
-\phone[fixed]{+54 (221)~425~4909 [102]}                    % optional, remove / comment the line if not wanted                      % optional, remove / comment the line if not wanted
-\email{lcombi@iar.unlp.edu.ar}                               % optional, remove / comment the line if not wanted
-                % optional, remove / comment the line if not wanted
-                      % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -52,76 +44,38 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Academic Formation}
-\cventry{2011-2016}{Ms.S. in Physics}{Department of physics}{Faculty of Exact Sciences}{\textit{Universidad Nacional de La Plata} (UNLP)}{}
+I am a relativistic astrophysicist interested in the violent phenomena that occur around strong gravitational fields. I use simulations and semi-analytical models to study the electromagnetic radiation from compact objects such as black holes, supermassive black holes binaries, neutron star mergers, and other systems. I also work with observations of radio pulsars and radio-transients.
+ 
+
+\section{Personal information}
+\cvitem{Adress}{Instituto Argentino de Radioastronomía, Buenos Aires, Argentina}
+\cvitem{Citizenship}{Argentina}
+\cvitem{Webpage}{\url{sites.google.com/view/lucianocombi}}
+\cvitem{Email}{\url{lcombi@iar.unlp.edu.ar}}
+
+\section{Education}
+\cventry{2011 - 2016}{Master in Physics}{Department of physics}{Faculty of Exact Sciences}{\textit{Universidad Nacional de La Plata} (UNLP)}{}
 \cvitem{}{Average mark: 9.60/10}
-\cvitem{}{Degree thesis:  between General Relativity and Teleparallel Gravity. Mark: 10/10. Supervisor: Gustavo E. Romero.}
+\cvitem{}{Degree thesis:  Equivalence between General Relativity and Teleparallel Gravity. Mark: 10/10. Supervisor: Gustavo E. Romero.}
 
-
-\cventry{2017-Present}{Ph.D. in Physics}{Department of physics}{Faculty of Exact Sciences}{UNLP}{}
+\cventry{2017 - 2022}{Ph.D. in Physics}{Department of physics}{Faculty of Exact Sciences}{UNLP}{}
 \cvitem{}{Supervisor: Gustavo E. Romero.}
+\cvitem{}{Degree thesis: Local effects of the cosmic expansion}
 
 \section{Current position}
-\cventry{2017-Present}{Ph.D Fellow}{CONICET}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2017 -}{CONICET Ph.D Fellow}{}{}{}{}  % arguments 3 to 6 can be left empty
 \cvitem{}{Supervisor: Gustavo E. Romero.}
-\cvitem{}{Research field: gravitation, General Relativity, cosmology, black holes, local physics and cosmology, astrophysics, foundations of physics, scientific philosophy.}
-\cvitem{}{Place: Instituto Argentino de Radioastronomía, Bs.As., Argentina}
+\cvitem{}{Place: Instituto Argentino de Radioastronom\'ia}
 
-\section{Ph.D. Courses}
-\cventry{2017}{Elements of Quantum Field Theory I}{}{}{}{}  % arguments 3 to 6 can be left empty
-\cvitem{}{Department of Physics, Faculty of Exact Sciences, UNLP}
-\cvitem{}{Professor: Horacio Falomir}
-\cvitem{}{Duration: 1 semester}
-\cventry{2020}{Precision Cosmology}{}{}{}{}  % arguments 3 to 6 can be left empty
-\cvitem{}{Faculty of Astronomy and Geophysics, UNLP}
-\cvitem{}{Professor: Claudia Scoccola}
-\cvitem{}{Duration: 1 semester}
+\section{Awards}
 
-\section{Fellowships}
-\cventry{2017}{Ph.D. Research Fellow}{CONICET}{(National Research Council)}{}{}  % arguments 3 to 6 can be left empty
-\cvitem{}{Supervisor: Gustavo E. Romero.}
-\cvitem{}{Place: Instituto Argentino de Radioastronomía, Bs.As., Argentina.}
+\cvitem{2017}{\textbf{Joaqu\'in V. Gonzales award} for distinguished graduate of the National University of La Plata. Given by the City Government of La Plata, Capital of Buenos Aires.}
 
+\cventry{2017}{CONICET Fellowship}{}{5 year fellowship awarded by the National Research Council of Argentina}{}{}  % arguments 3 to 6 can be left empty
 
-\section{Teaching and mentoring experience}
+\cventry{2021}{Visiting Fellowship from Perimeter Institute}{}{Awarded one semester visiting fellowship at Perimeter Institute (full funding) to work with Dr. Daniel Siegel on binary neutron star mergers \textit{(Postponed: work started online due to COVID19)}}{}{}  % arguments 3 to 6 can be left empty
 
-\subsection*{Course assistant}
-\cvitem{2015}{\textbf{Undergraduate Teaching Assistant} of Calculus II, Department of Mathematics, Faculty of Exact Sciences, UNLP. \textbf{Period}: 1th semester}
-
-\cvitem{2015 - 2017}{\textbf{Undergraduate Teaching Assistant}, Department of Physics, Faculty of Exact Sciences, UNLP. Courses given: Linear Algebra, General Physics I, General Physics II}
-
-\cvitem{2015 - 2017}{\textbf{Undergraduate Teaching Assistant} Faculty of Engineering, UNLP.  \textbf{Course}: Physics I (Laboratory duties)} 
-
-\cvitem{2017- 2019}{\textbf{Graduate Teaching Assistant} Department of Physics, Faculty of Exact Sciences, UNLP. Courses given: Gravitation, General Physics III, Methods in Mathematical Physics. Mechanics I}
-
-\subsection*{Advisory}
-
-\cvitem{2019-2020}{\textbf{Thesis advisor} for the master degree (\textit{Licenciatura}) in Astronomy, Valentina Sosa Fiscella.  \textbf{Topic}: High-precision timing of pulsar J0437-4715 from IAR} 
-
-
-\section{Workshops and Schools}
-
-\cvitem{2016}{\textit{Journeys in theoretical physics}, (ICTP-Perimeter Institute). \textbf{Place:} Sao Paulo, Brasil. \textbf{Duration:} 1 week (40 hs). \textbf{Funding:} ICTP-SAIFR}
-
-
-\cvitem{2016}{\textit{$f(R)$ theories of gravity}, (FCGALP, UNLP). \textbf{Place:} La Plata, Argentina. \textbf{Duration:} 1 week (40 hs).}
-
-
-\cvitem{2018}{\textit{LAPIS: Cosmology in the era of large surveys}, (FCGALP, UNLP). \textbf{Place:} La Plata, Argentina. \textbf{Duration:} 1 week (40 hs).\textbf{Funding:} UNLP }
-
-
-\cvitem{2018}{\textit{International Pulsar Timing Array, student week}, (NRAO). \textbf{Place:} New Mexico, USA. \textbf{Duration:} 1 week (40 hs). \textbf{Funding:} NANOGrav}
-
-
-\cvitem{2018}{\textit{First Biennial Midwest Summer School in Philosophy of Physics}, (University of Chicago). \textbf{Place:} Chicago, USA. \textbf{Duration:} 1 week (40 hs). \textbf{Funding:} Templeton Foundation}
-
-
-\cvitem{2018}{\textit{The Sound of Space-Time: The dawn of Gravitational Wave Science}, (ICTP-SAIFR). \textbf{Place:} Sao Paulo, Brasil.\textbf{Duration:} 3 weeks (120 hs). \textbf{Funding:} ICTP-SAIFR}
-
-
-\cvitem{2019}{\textit{North American Einstein Toolkit Workshop}, (RIT). \textbf{Place:} Rochester, USA. \textbf{Duration:} 3 days. \textbf{Funding:} CCRG-RIT}
-
-\cvitem{2020}{\textit{TCAN on Binary Neutron Stars}, (RIT). \textbf{Place:} Rochester, USA. \textbf{Duration:} 5 days.}
+\cventry{2021}{AARMS award}{}{Third place for Best Graduate student talk in the Canadian Student and Postdoc Conference on Gravity}{}{}  % arguments 3 to 6 can be left empty
 
 \section{Research stays abroad}
 
@@ -137,33 +91,116 @@
 \textbf{Funding:} Center for Computational Relativity and Gravitation, RIT,
 \textbf{Project:} MHD simulations of spinning binary black hole systems, with Manuela Campanelli.}
 
-\cvitem{2021}{\textit{Perimeter Institute},
-\textbf{Place:} Waterloo, Canada,
-\textbf{Duration} 4 months,
-\textbf{Funding:} Visiting Fellowhship, PI,
-\textbf{Project:} Modelling fast ejecta emission from binary neutron star mergers, with Daniel Siegel.}
+%\cvitem{2021}{\textit{Perimeter Institute},
+%\textbf{Place:} Waterloo, Canada,
+%\textbf{Duration} 4 months,
+%\textbf{Funding:} Visiting Fellowhship, PI,
+%\textbf{Project:} Modelling fast ejecta emission from binary neutron star mergers, with Daniel Siegel.}
+
+\section{Computational expertise}
+\cvitem{Languages}{Mathematica, Python, C/C++, BASH, Jupyter}
+\cvitem{HPC}{MPI/OMP, Einstein Toolkits (Cactus), GRMHD codes such as HARM3D and GRHydro}
+\cvitem{Use of clusters}{ Frontera (TX, USA), BlueWaters (IL, USA), Niagara (ON, CAN)}
+
+\section{Observational experience}
+\cvitem{}{Radio observations of \textit{pulsars} with single dish Antennas at the Argentine Institute of Radioastronomy. Reduction and analysis of data. Software usage: \texttt{PRESTO},\texttt{PSRCHIVE},\texttt{Enterprise},\texttt{TEMPO2}}
+
+\subsection{Telegrams}
+
+\cventry{1}{Follow up of the radio flare from the magnetar XTE J1810-197 at 1.4 GHz}{}{}{}{}
+\cvitem{}{Del Palacio, S.; Garcia, F.; Combi, L.; Lopez Armengol, F.; Gancio, G.; Muller, A. L.; Kornecki, P., on behalf of the PuMA Collaboration}
+\cvitem{}{\textit{The Astronomer's Telegram}, \textbf{12323}, 2018}
+
+\cventry{2}{Radio observations following the recent glitch of Vela Pulsar (PSR B0833-45)}{}{}{}{}
+\cvitem{}{F. G. Lopez Armengol, C. O. Lousto, S. del Palacio , F. Garcia, L. Combi, J. A. Combi , G. Gancio , A. L. Mueller, P. Kornecki, on behalf of the PuMA Collaboration}
+\cvitem{}{\textit{The Astronomer's Telegram}, \textbf{12482}, 2019}
+
+\section{Teaching and mentoring experience}
+
+\subsection*{Course assistant}
+\cvitem{2015}{\textbf{Undergraduate teaching assistant} of Calculus II, Department of Mathematics, Faculty of Exact Sciences, UNLP. \textbf{Period}: 1th semester}
+
+\cvitem{2015 - 2017}{\textbf{Undergraduate teaching assistant}, Department of Physics, Faculty of Exact Sciences, UNLP. Courses given: Linear Algebra, General Physics I, General Physics II}
+
+\cvitem{2015 - 2017}{\textbf{Undergraduate teaching assistant} Faculty of Engineering, UNLP.  \textbf{Course}: Physics I (Laboratory duties)} 
+
+\cvitem{2017 - 2019}{\textbf{Graduate teaching assistant} Department of Physics, Faculty of Exact Sciences, UNLP. Courses given: Gravitation, General Physics III, Methods in Mathematical Physics. Mechanics I}
+
+\subsection*{Mentorship}
+
+\cvitem{2019 - 2020}{\textbf{Thesis co-advisor} for the master's degree (\textit{Licenciatura}) in Astronomy, Valentina Sosa Fiscella.  \textbf{Topic}: High-precision timing of pulsar J0437-4715 from IAR} 
+
+\section{Grants and funding}
+
+\cvitem{2016}{Full funding given by the ICTP-Perimeter Institute for one-week school 'Journeys in theoretical physics' at ICTP, Sao Pablo, Brasil}
+
+\cvitem{2018}{Partial funding given by NANOgrav for one month research visit at the West Virginia University, Morgantown, USA}
+
+\cvitem{2018}{Partial funding given by the Templeton foundation for one-week school 'First Biennial Midwest Summer School in Philosophy of Physics' at University of Chicago, Chicago, USA}
+
+\cvitem{2018}{Full funding given by the ICTP for three-week school 'The Sound of Spacetime' at ICTP, Sao Pablo, Brasil}
+
+\cvitem{2019}{Full funding given by the CCRG for six month research visit at the Rochester Institute of Technology (Rochester, USA) (PI: Manuela Campanelli)}
+
+\cvitem{2020}{Full funding given by the Perimeter Institute for four month research visit at the Perimeter Institute (Waterloo, Canada) (PI: Daniel Siegel)}
+
+
+\cvitem{2020}{Collaborator in NSF grant: "MRI: Acquisition of a Computing System for Large Simulation Data Sets in Multimessenger Astrophysics” (PI: Manuela Campanelli)}
+
+\cvitem{2021}{Collaborator in NSF grant: “Collaborative Research: Supermassive Binary Black Hole Mergers: Accretion Dynamics and Electromagnetic Output“ (at NSF Windows on the Universe: The Era of Multi-messenger Astrophysics) (PI: Manuela Campanelli and Julian Krolik)}
+
+
+\section{Workshops and Schools}
+
+\cvitem{2016}{\textit{Journeys in theoretical physics}, (ICTP-Perimeter Institute). \textbf{Place:} Sao Paulo, Brasil. \textbf{Duration:} 1 week (40 hs). \textbf{Funding:} ICTP-SAIFR}
+
+\cvitem{2016}{\textit{$f(R)$ theories of gravity}, (FCGALP, UNLP). \textbf{Place:} La Plata, Argentina. \textbf{Duration:} 1 week (40 hs).}
+
+\cvitem{2018}{\textit{LAPIS: Cosmology in the era of large surveys}, (FCGALP, UNLP). \textbf{Place:} La Plata, Argentina. \textbf{Duration:} 1 week (40 hs).\textbf{Funding:} UNLP }
+
+
+\cvitem{2018}{\textit{International Pulsar Timing Array, student week}, (NRAO). \textbf{Place:} New Mexico, USA. \textbf{Duration:} 1 week (40 hs).}
+
+\cvitem{2018}{\textit{First Biennial Midwest Summer School in Philosophy of Physics}, (University of Chicago). \textbf{Place:} Chicago, USA. \textbf{Duration:} 1 week (40 hs).}
+
+\cvitem{2018}{\textit{The Sound of Space-Time: The dawn of Gravitational Wave Science}, (ICTP-SAIFR). \textbf{Place:} Sao Paulo, Brasil.\textbf{Duration:} 3 weeks (120 hs). \textbf{Funding:} ICTP-SAIFR}
+
+\cvitem{2019}{\textit{North American Einstein Toolkit Workshop}, (RIT). \textbf{Place:} Rochester, USA. \textbf{Duration:} 3 days. \textbf{Funding:} CCRG-RIT}
+
+\cvitem{2020}{\textit{TCAN on Binary Neutron Stars}, (RIT). \textbf{Place:} Rochester, USA. \textbf{Duration:} 5 days.}
 
 
 \section{Scientific meetings}
 
-\subsection{Invited presentation}
+\subsection{\textbf{Invited presentation}}
 
-\cvitem{2017}{\textit{PuMA proyect: Pulsar Monitoring in Argentina} (in Spanish)}
+\cvitem{2017}{\textit{The PuMA project: Pulsar Monitoring in Argentina} (in Spanish)}
 \cvitem{}{Encuentro de Estudiantes de Astronomía, Buenos Aires, Argentina. September 2017}
 
 \cvitem{2018}{\textit{First Pulsar Observations in South America}}
 \cvitem{}{Binational meeting SOCHIAS-AAA, La Serena, Chile. Octubre 16}
 
 
-\subsection{Contribution presentation}
+\subsection{\textbf{Contribution presentation}}
 
 \cvitem{2015}{\textit{Inconsistency within the Everett interpretation of Quantum Mechanics}}
-\cvitem{}{First Latinamerican congress of Scientific Philosophy (In honor to Mario Bunge), Buenos Aires, Argentina. October 2015}
+\cvitem{}{First Latin-American congress of Scientific Philosophy (In honor to Mario Bunge), Buenos Aires, Argentina. October 2015}
 
 \cvitem{2019}{\textit{Gravitational wave science and pulsars in Argentina}}
 \cvitem{}{Grav19, Cordoba, Argentina. April 12}
 
-\subsection{Posters}
+\cvitem{2019}{\textit{Dual jets in supermassive black hole binaries}}
+\cvitem{}{Argentine Astronomical Association, Rosario, Argentina. October 13}
+
+\cvitem{2021}{\textit{GRMHD simulations of binary neutron stars with weak interactions}}
+\cvitem{}{Canadian Student and Postdoc Conference on Gravity, Memorial University of Newfoundland, Canada. May 4}
+
+\cvitem{2021}{\textit{Accretion onto spinning supermassive black hole binaries}}
+\cvitem{}{LISA Astrophysics Working Group Meeting, Institute of Computational Science (ICS), University of Zurich}
+
+\
+
+\subsection{\textbf{Posters and proceedings}}
 
 \cvitem{2015}{\textit{Force between cylindric magnets: Theory and experiment} (in Spanish)}
 \cvitem{}{Luciano Combi, Lucas Pili, Pablo Pisani, Fernando Monticelli}
@@ -181,35 +218,38 @@
 \cvitem{}{Luciano Combi, Guillermo Gancio, Carlos Lousto}
 \cvitem{}{IPTA international meeting, Albuquerque, USA}
 
-\section{Outreach}
+\cvitem{2020}{\textit{Developing a digital receiver for pulsar observations}}
+\cvitem{}{Gancio, G., Lousto, C., Combi, L., García, F., and Colaboración PuMA}
+\cvitem{}{Bolet\'in de la Asociaci\'on Argentina de Astronom\'ia, La Plata, Argentina, vol. 61, pp. 222–224, 2020}
 
-\cvitem{2018}{\textit{Friday talks in the Planetarium}: Gravitational waves and pulsars}
-\cvitem{}{Planetarium, La Plata, Argentina}
+\section{Outreach \& media}
 
-\cvitem{2018}{\textbf{Outreach} department member of Argentine Institute of Radioastronomy}
-\cvitem{}{In charge of social media management and guide for primary school and high-school visits to the Institute}
+\cvitem{2018}{\textit{Friday talks in the Planetarium}: Gravitational waves and pulsars. Outreach talk at Planetarium, La Plata, Argentina}
+
+\cvitem{2018}{Member of the \textbf{outreach} department at Argentine Institute of Radioastronomy. In charge of social media management and guide for primary school and high-school visits to the Institute}
+
+\cvitem{2019}{\href{https://www.iar.unlp.edu.ar/boletin/la-existencia-de-los-agujeros-negros/}{On the existence of black holes}, outreach article in the bi-monthly Radioastronomy Bulletin (spanish)}
+
+\cvitem{2019}{\href{https://youtu.be/ZMbq3JNkc_U}{'A vision of the Argentine Institute of Radioastronomy'}, producer of the mini-documentary directed by Luciana Demichelis}
+
+\cvitem{2020}{\href{https://www.iar.unlp.edu.ar/boletin/agujeros-de-gusano-y-otras-especulaciones/}{Wormholes and other speculations}, opinion column in the bi-monthly Radioastronomy Bulletin (spanish)}
+
+\cvitem{2020}{\href{https://www.telam.com.ar/notas/202012/539298-cientificos-del-conicet-aportan-novedades-sobre-pulsares-que-solo-se-ven-en-el-hemisferio-sur.html}{Pulsar hunters}, media cover in CONICET and the Argentine National News Agency (spanish)}
 
 \section{Languages}
 \cvitemwithcomment{Native}{Spanish}{}
-\cvitemwithcomment{}{English}{}
-\cvitemwithcomment{}{French}{}
-
-\section{Programming}
-\cvitem{}{Mathematica, Python, C/C++, Linux}
-
-\section{Observational experience}
-\cvitem{}{Radio observations of \textit{pulsars} with single dish Antennas at the Argentine Institute of Radioastronomy. Reduction and analysis of data. Software usage: \texttt{PRESTO},\texttt{PSRCHIVE},\texttt{Enterprise},\texttt{TEMPO2}}
-
+\cvitemwithcomment{Proficient}{English}{}
+\cvitemwithcomment{Intermediate}{French}{}
 
 \section{Memberships}
-
-\cvitem{}{PuMA (\textit{Pulsar Monitoring in Argentina} collaboration.
+\cvitem{}{\href{http://puma.iar.unlp.edu.ar/}{PuMA (IAR)} (\textit{Pulsar Monitoring in Argentina} collaboration.
 \textbf{Status:} Full member. \textbf{Place:} Argentine Institute of Radioastronomy (IAR), La Plata, Argentina}
 
-\section{Awards}
+\cvitem{}{\href{https://compact-binaries.org/}{Compact binaries (RIT)}. Research collaboration for multi-messenger astrophysics.}
 
+\cvitem{}{\href{https://garra.iar.unlp.edu.ar/}{GARRA (IAR-FCGALP)} (\textit{Grupo de Astrofísica relativista y radioastronomía)}}
 
-\cvitem{2017}{\textbf{Joaqu\'in V. Gonzales award} for distinguished graduate of the National University of La Plata. Given by the City Government of La Plata, Capital of Buenos Aires.}
+\cvitem{}{\href{https://pi-uog-relastro.gitlab.io/group_website/}{RelAstro (PI-U.Guelph)}  (\textit{Relativistic Astrophysics Group at Perimeter Institute and U. of Guelph})}
 
 
 \section{Other activities}
@@ -219,76 +259,77 @@
 \cvitem{}{Gravitation and Cosmology (Springer)}
 \cvitem{}{Estonian Research Council (ETIS)}
 
-
-\pagebreak
+%\pagebreak
 
 \section{Publications}
 
-\cvitem{}{11 papers in peer-reviewed international journals, 7 as first author. 1 book chapter}
+\subsection{Papers in major peer-reviewed journals}
 
+\cventry{2021}{GRMHD simulations of binary neutron star mergers with weak interactions I}{}{}{}{}
+\cvitem{}{Luciano Combi, Daniel Siegel}
+\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
 
-\subsection{Refereed papers in international journals}
+%\cventry{2021}{Electromagnetic emission in spinning supermassive black hole binaries approaching merger}{}{}{}{}
+%\cvitem{}{Eduardo Gutierrez, Luciano Combi, Scott Noble, Manuela Campanelli, }
+%\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
 
-\cventry{2017}{Inconsistency within the Everett interpretation of Quantum Mechanics}{}{}{}{}
-\cvitem{}{Luciano Combi, Gustavo E. Romero.}
-\cvitem{}{\textit{Methateoria} (ISSN 1853-2322) \textbf{7}, 47-53}
+%\cventry{2021}{Non-thermal flares in supermassive binary black holes}{}{}{}{}
+%\cvitem{}{Eduardo Gutierrez, Luciano Combi, Gustavo Romero, Manuela Campanelli}
+%\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
 
-\cventry{2017}{Gravitational energy and radiation of a charged black hole}{}{}{}{}
-\cvitem{}{Luciano Combi, Gustavo E. Romero.}
-\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{34}, 195008}
+\cventry{2021}{Accretion onto spinning black hole binaries: mini-disks structure and outflows}{}{}{}{}
+\cvitem{}{Luciano Combi, F.G. Lopez Armengol, Manuela Campanelli, Scott Noble, Mark Avara, Julian Krolik,  Dennis Bowen}
+\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
 
-\cventry{2018}{Is Teleparallel Gravity really equivalent to General Relativity?}{}{}{}{}
-\cvitem{}{Luciano Combi, Gustavo E. Romero.}
-\cvitem{}{\textit{Annalen der Physik}, 1700175, (2018)}
+\cventry{2021}{An superposed metric for spinning black hole binaries}{}{}{}{}
+\cvitem{}{Luciano Combi, F.G. Lopez Armengol, Manuela Campanelli, Brennan Ireland, Scott Noble, Hiroyuki Nakano, Dennis Bowen}
+\cvitem{}{\textit{Physical Review D}, (Submitted)}
 
-\cventry{2019}{A note on geodesics in inhomogeneous expanding spacetimes}{}{}{}{}
-\cvitem{}{D. Perez, G.E. Romero, Luciano Combi, E.M. Guti\'errez.}
-\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{36}, 055002}
+\cventry{2021}{Circumbinary Disk Accretion into Spinning Black Hole Binaries}{}{}{}{}
+\cvitem{}{F.G. Lopez Armengol, Luciano Combi, Manuela Campanelli, Scott Noble, Dennis Bowen, Mark Avara}
+\cvitem{}{\textit{Astrophysical Journal}, \textbf{913} 16}
 
-\cventry{2019}{Electromagnetic fields and charges in expanding universes}{}{}{}{}
-\cvitem{}{Luciano Combi, Gustavo E. Romero}
-\cvitem{}{\textit{Physical Review D}, \textbf{99}, 064017}
+\cventry{2021}{PSR J0437-4715: The Argentine Institute of Radioastronomy 2019-2020 Observational Campaign}{}{}{}{}
+\cvitem{}{V. Sosa Fiscella, S. del Palacio, Luciano Combi, C.O. Lousto, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
+\cvitem{}{\textit{Astrophysical Journal}, \textbf{913} 158}
 
-\cventry{2020}{Upgraded antennas for pulsar observations in the Argentine Institute of Radio astronomy}{}{}{}{}
-\cvitem{}{G. Gancio, C.O. Lousto, Luciano Combi, S. del Palacio, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
-\cvitem{}{\textit{Astronomy and Astrophysics, 633, A84 }}
 
 \cventry{2020}{Relativistic rigid systems and the cosmic expansion}{}{}{}{}
 \cvitem{}{Luciano Combi, Gustavo E. Romero}
 \cvitem{}{\textit{General Relativity and Gravitation}, 52:93}
 
-\cventry{2020}{Circumbinary Disk Accretion into Spinning Black Hole Binaries}{}{}{}{}
-\cvitem{}{F.G. Lopez Armengol, Luciano Combi, Manuela Campanelli, Scott Noble, Dennis Bowen, Mark Avara}
-\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
+\cventry{2020}{Upgraded antennas for pulsar observations in the Argentine Institute of Radio astronomy}{}{}{}{}
+\cvitem{}{G. Gancio, C.O. Lousto, Luciano Combi, S. del Palacio, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
+\cvitem{}{\textit{Astronomy and Astrophysics, 633, A84 }}
 
-\cventry{2020}{An approximate superimposed metric for spinning black hole binaries}{}{}{}{}
-\cvitem{}{Luciano Combi, F.G. Lopez Armengol, Manuela Campanelli, Scott Noble, Brennan Ireland, Mark Avara,Dennis Bowen, Hiroyuki Nakano}
-\cvitem{}{\textit{Physical Review D}, (In prep.)}
 
-\cventry{2020}{Accretion onto spinning black hole binaries}{}{}{}{}
-\cvitem{}{Luciano Combi, F.G. Lopez Armengol, Manuela Campanelli, Scott Noble, Mark Avara, Dennis Bowen}
-\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
+\cventry{2019}{Electromagnetic fields and charges in expanding universes}{}{}{}{}
+\cvitem{}{Luciano Combi, Gustavo E. Romero}
+\cvitem{}{\textit{Physical Review D}, \textbf{99}, 064017}
 
-\cventry{2020}{PSR J0437-4715: The Argentine Institute of Radioastronomy 2019-2020 Observational Campaign}{}{}{}{}
-\cvitem{}{V. Sosa Fiscella, S. del Palacio, Luciano Combi, C.O. Lousto, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
-\cvitem{}{\textit{Astronomy and Astrophysics}, (In prep.)}
+\cventry{2019}{A note on geodesics in inhomogeneous expanding spacetimes}{}{}{}{}
+\cvitem{}{D. Perez, G.E. Romero, Luciano Combi, E.M. Guti\'errez.}
+\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{36}, 055002}
+
+\cventry{2018}{Is Teleparallel Gravity really equivalent to General Relativity?}{}{}{}{}
+\cvitem{}{Luciano Combi, Gustavo E. Romero.}
+\cvitem{}{\textit{Annalen der Physik}, 1700175, (2018)}
+
+\cventry{2017}{Gravitational energy and radiation of a charged black hole}{}{}{}{}
+\cvitem{}{Luciano Combi, Gustavo E. Romero.}
+\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{34}, 195008}
+
+\cventry{2017}{Inconsistency within the Everett interpretation of Quantum Mechanics}{}{}{}{}
+\cvitem{}{Luciano Combi, Gustavo E. Romero.}
+\cvitem{}{\textit{Methateoria} (ISSN 1853-2322) \textbf{7}, 47-53}
+
+\
 
 \subsection{Chapter in books}
 
-\cventry{1}{Is space-time material?}{}{}{}{}
+\cventry{2021}{Is space-time material?}{}{}{}{}
 \cvitem{}{Luciano Combi}
 \cvitem{}{\textit{Ontological and Epistemological Issues in Contemporary Materialism}, Syntheses-Springer, 2020 (Forthcoming)}
-
-
-\subsection{Telegrams}
-
-\cventry{1}{Follow up of the radio flare from the magnetar XTE J1810-197 at 1.4 GHz}{}{}{}{}
-\cvitem{}{Del Palacio, S.; Garcia, F.; Combi, L.; Lopez Armengol, F.; Gancio, G.; Muller, A. L.; Kornecki, P., on behalf of the PuMA Collaboration}
-\cvitem{}{\textit{The Astronomer's Telegram}, \textbf{12323}, 2018}
-
-\cventry{2}{Radio observations following the recent glitch of Vela Pulsar (PSR B0833-45)}{}{}{}{}
-\cvitem{}{F. G. Lopez Armengol, C. O. Lousto, S. del Palacio , F. Garcia, L. Combi, J. A. Combi , G. Gancio , A. L. Mueller, P. Kornecki, on behalf of the PuMA Collaboration}
-\cvitem{}{\textit{The Astronomer's Telegram}, \textbf{12482}, 2019}
 
 
 \end{document}

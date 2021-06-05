@@ -116,7 +116,7 @@
 \urlstyle{tt}
 \AtEndPreamble{
   \pagenumbering{arabic}% has to be issued before loading hyperref, as to set \thepage and hence to avoid hyperref issuing a warning and setting pdfpagelabels=false
-  \RequirePackage[unicode]{hyperref}% unicode is required for unicode pdf metadata
+  \RequirePackage[colorlinks, unicode]{hyperref}% unicode is required for unicode pdf metadata
   \hypersetup{
     breaklinks,
     baseurl       = http://,
@@ -130,8 +130,11 @@
     pdfauthor     = {\@firstname{}~\@lastname{}},
     pdftitle      = {\@firstname{}~\@lastname{} -- \@title{}},
     pdfsubject    = {Resum\'{e} of \@firstname{}~\@lastname{}},
-    pdfkeywords   = {\@firstname{}~\@lastname{}, curriculum vit\ae{}, resum\'{e}}}}
-
+    pdfkeywords   = {\@firstname{}~\@lastname{}, curriculum vit\ae{}, resum\'{e}}
+    colorlinks    = true,
+    linkcolor     = blue,
+    filecolor     = magenta,      
+    urlcolor      = cyan}}
 % graphics
 \RequirePackage{graphicx}
 
