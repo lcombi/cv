@@ -4,8 +4,6 @@
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
-
-
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \usepackage{soul}
 % moderncv themes
@@ -13,7 +11,9 @@
 \moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
+\newcommand\mybitem[1]{%
+   \parbox[t]{3mm}{\textbullet}\parbox[t]{10cm}{#1}\\[1.6mm]}
+   
 % character encoding
 \usepackage[utf8]{inputenc}   
                     % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -26,21 +26,25 @@
 % My commands
 \DeclareRobustCommand{\luc}[1]{ {\begingroup\color{purple}#1\endgroup} }
 \newcommand{\lc}{{ \textcolor{purple}{Luciano Combi} }} 
-
-
+\newcommand{\apj}{{ \textit{The Astrophysical Journal} }}
+\newcommand{\mnras}{{ \textit{Monthly Notices of the Royal Astronomical Society} }}
+\newcommand{\prd}{{ \textit{Physical Review D} }}
+\newcommand{\grg}{{ \textit{General Relativity and Gravitation} }}
+\newcommand{\aaa}{{ \textit{Astronomy and Astrophysics} }}
+\newcommand{\cqg}{{ \textit{Classical and Quantum Gravity} }}
 
 % personal data
 \name{Luciano}{Combi}
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
 
 % bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -82,6 +86,11 @@ I am a relativistic astrophysicist interested in the violent phenomena that occu
 \cventry{2020}{Visiting Fellowship from Perimeter Institute}{}{Awarded one semester visiting fellowship at Perimeter Institute (full funding) to work with Dr. Daniel Siegel on binary neutron star mergers}{}{}  % arguments 3 to 6 can be left empty
 
 \cventry{2021}{AARMS award}{}{Third place for Best Graduate student talk in the Canadian Student and Postdoc Conference on Gravity}{}{}  % arguments 3 to 6 can be left empty
+
+\cventry{2022}{Perimeter Postdoctoral Fellowship}{}{3 year fellowship awarded by Perimeter Institute. Joint with CITA National Fellowship}{}{}  % arguments 3 to 6 can be left empty
+
+\cventry{2022}{CITA National Fellowship}{}{National fellowship awarded by the Canadian Institute of Theoretical Astrophysics with U. of Guelph and Perimeter Institute}{}{}  % arguments 3 to 6 can be left empty
+
 
 \section{Research stays abroad}
 
@@ -174,10 +183,13 @@ I am a relativistic astrophysicist interested in the violent phenomena that occu
 \cvitem{}{Binational meeting SOCHIAS-AAA, La Serena, Chile. October 16}
 
 \cvitem{2021}{\textit{GRMHD simulations of accretion disks onto spinning supermassive binary black holes}}
-\cvitem{}{Gravitational Wave lunch seminar, NASA Goddard, Baltimore. September 16}
+\cvitem{}{Gravitational Wave lunch seminar, NASA Goddard, Baltimore, USA. September 16}
 
 \cvitem{2021}{\textit{Accretion onto spinning supermassive binary black holes}}
-\cvitem{}{Plasma-astro seminar, Princeton University, Princeton. October 22}
+\cvitem{}{Plasma-astro seminar, Princeton University, Princeton, USA. October 22}
+
+\cvitem{2021}{\textit{Electromagnetic signatures from neutron star mergers and supermassive binary black holes}}
+\cvitem{}{Strong gravity seminar, Perimeter Institute, Waterloo, Canada. November 16}
 
 \subsection{\textbf{Contribution presentation}}
 
@@ -187,14 +199,18 @@ I am a relativistic astrophysicist interested in the violent phenomena that occu
 \cvitem{2019}{\textit{Gravitational wave science and pulsars in Argentina}}
 \cvitem{}{Grav19, Cordoba, Argentina. April 12}
 
-\cvitem{2019}{\textit{Dual jets in supermassive black hole binaries}}
+\cvitem{2020}{\textit{Dual jets in supermassive black hole binaries}}
 \cvitem{}{Argentine Astronomical Association, Rosario, Argentina. October 13}
 
 \cvitem{2021}{\textit{GRMHD simulations of binary neutron stars with weak interactions}}
 \cvitem{}{Canadian Student and Postdoc Conference on Gravity, Memorial University of Newfoundland, Canada. May 4}
 
 \cvitem{2021}{\textit{Accretion onto spinning supermassive black hole binaries}}
-\cvitem{}{LISA Astrophysics Working Group Meeting, Institute of Computational Science (ICS), University of Zurich}
+\cvitem{}{LISA Astrophysics Working Group Meeting, Institute of Computational Science (ICS), University of Zurich. September}
+
+\cvitem{2022}{\textit{Electromagnetic signatures from fast ejecta in neutron star mergers }}
+\cvitem{}{Seminaire haute énergie, LUTH,  Paris, France. May 29}
+
 
 \
 
@@ -252,77 +268,84 @@ I am a relativistic astrophysicist interested in the violent phenomena that occu
 \section{Other activities}
 
 \cvitem{}{\textbf{Reviewer in scientific journals} and institutions:}
-\cvitem{}{Astrophysics and Space Science (Springer)}
-\cvitem{}{Gravitation and Cosmology (Springer)}
-\cvitem{}{Estonian Research Council (ETIS)}
+\cvitem{}{Astrophysics and Space Science (Springer), Gravitation and Cosmology (Springer), Foundations of Science (Springer), Estonian Research Council (ETIS)}
 
 \pagebreak
 
+
 \section{Publications}
 
-\subsection{{\underline{Papers in preparations}}}
 
+\hspace{2cm} \textbf{14} papers in international peer-review journals.
+\vspace{.4cm}
 
-\cventry{13}{GRMHD simulations of binary neutron star mergers with weak interactions I: electromagnetic signatures of dynamical ejecta}{}{}{}{}
-\cvitem{}{\lc, Daniel Siegel}
-\cvitem{}{\textit{In prep}, (2021)}
+\hspace{2cm} \textbf{9} first author papers.
 
+\hspace{2cm} \textbf{5} second/third author papers.
+
+\hspace{2cm}  \textbf{1} chapter in book. \textbf{3} Astronomy Telegrams.
+\vspace{.4cm}
+
+\vspace{.4cm}
 \subsection{\underline{Papers published/submitted in major peer-reviewed journals}}
-%\cventry{2021}{Electromagnetic emission in spinning supermassive black hole binaries approaching merger}{}{}{}{}
-%\cvitem{}{Eduardo Gutierrez, Luciano Combi, Scott Noble, Manuela Campanelli, }
-%\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
-%\cventry{2021}{Non-thermal flares in supermassive binary black holes}{}{}{}{}
-%\cvitem{}{Eduardo Gutierrez, Luciano Combi, Gustavo Romero, Manuela Campanelli}
-%\cvitem{}{\textit{Astrophysical Journal}, (In prep.)}
-\cventry{12}{Vela Pulsar: Single Pulses Analysis with Machine Learning Techniques. }{}{}{}{}
-\cvitem{}{Lousto, C.O., Missel, R., Prajapati, H., Fiscella, V.S., Armengol, F.G.L., Gyawali, P.K., Wang, L., Cahill, N., \lc, del Palacio, S. and Combi, J.A.}
-\cvitem{}{arXiv preprint 2108.13462, submitted to \textit{MNRAS}, (2021)}
+\vspace{.4cm}
 
-\cventry{11}{Mini-disk Accretion onto Spinning Black Hole Binaries: Quasi-periodicities and outflows}{}{}{}{}
+\cventry{2022}{GRMHD simulations of binary neutron star mergers with weak interactions: electromagnetic signatures of dynamical ejecta}{}{}{}{}
+\cvitem{}{\lc, Daniel Siegel}
+\cvitem{}{Submitted to ApJ}
+\cvitem{}{\url{https://arxiv.org/2206.03618}}
+
+\cventry{2022}{Electromagnetic emission from supermassive black hole binaries approaching merger}{}{}{}{}
+\cvitem{}{Eduardo Gutierrez, \lc, Scott Noble, Manuela Campanelli, Julian Krolik, Federico Lopez Armengol, Federico Garc\'ia}
+\cvitem{}{\apj 928, 137}
+
+\cventry{2022}{Mini-disk Accretion onto Spinning Black Hole Binaries: Quasi-periodicities and outflows}{}{}{}{}
 \cvitem{}{\lc, F.G. Lopez Armengol, Manuela Campanelli, Scott Noble, Mark Avara, Julian Krolik,  Dennis Bowen}
-\cvitem{}{arxiv preprint 2109.01307, submitted to the \textit{Astrophysical Journal}, (2021)}
+\cvitem{}{\apj 928, 187}
 
-\cventry{10}{Superposed metric for spinning black hole binaries}{}{}{}{}
+\cventry{2021}{Vela Pulsar: Single Pulses Analysis with Machine Learning Techniques. }{}{}{}{}
+\cvitem{}{Lousto, C.O., Missel, R., Prajapati, H., Fiscella, V.S., Armengol, F.G.L., Gyawali, P.K., Wang, L., Cahill, N., \lc, del Palacio, S. and Combi, J.A.}
+\cvitem{}{\mnras 509 (4), 5790-5808}
+
+\cventry{2021}{Superposed metric for spinning black hole binaries}{}{}{}{}
 \cvitem{}{\lc, F.G. Lopez Armengol, Manuela Campanelli, Brennan Ireland, Scott Noble, Hiroyuki Nakano, Dennis Bowen}
-\cvitem{}{\textit{Physical Review D}, \textbf{104}, 044041 , (2021) [\textit{Chosen as PRD Editors' Suggestion}]}
+\cvitem{}{\prd 104 (4), 044041	 [\textit{Chosen as PRD Editors' Suggestion}]}
 
-\cventry{9}{Circumbinary Disk Accretion into Spinning Black Hole Binaries}{}{}{}{}
+\cventry{2021}{Circumbinary Disk Accretion into Spinning Black Hole Binaries}{}{}{}{}
 \cvitem{}{F.G. Lopez Armengol, \lc, Manuela Campanelli, Scott Noble, Dennis Bowen, Mark Avara}
-\cvitem{}{\textit{Astrophysical Journal}, \textbf{913} 16, (2021)}
+\cvitem{}{\apj 913 (1), 16	}
 
-\cventry{8}{PSR J0437-4715: The Argentine Institute of Radioastronomy 2019-2020 Observational Campaign}{}{}{}{}
+\cventry{2021}{PSR J0437-4715: The Argentine Institute of Radioastronomy 2019-2020 Observational Campaign}{}{}{}{}
 \cvitem{}{V. Sosa Fiscella, S. del Palacio, \lc, C.O. Lousto, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
-\cvitem{}{\textit{Astrophysical Journal}, \textbf{913} 158, (2021)}
+\cvitem{}{\apj, 913, 158}
 
-
-\cventry{7}{Relativistic rigid systems and the cosmic expansion}{}{}{}{}
+\cventry{2020}{Relativistic rigid systems and the cosmic expansion}{}{}{}{}
 \cvitem{}{\lc, Gustavo E. Romero}
-\cvitem{}{\textit{General Relativity and Gravitation}, 52:93, (2020)}
+\cvitem{}{\grg, 52:93}
 
-\cventry{6}{Upgraded antennas for pulsar observations in the Argentine Institute of Radio astronomy}{}{}{}{}
+\cventry{2020}{Upgraded antennas for pulsar observations in the Argentine Institute of Radio astronomy}{}{}{}{}
 \cvitem{}{G. Gancio, C.O. Lousto, \lc, S. del Palacio, F. G. Lopez Armengol, J. A. Combi, F. García, P.Kornecki, A. L. Müller, E. Gutierrez, and F. Hauscarriaga}
-\cvitem{}{\textit{Astronomy and Astrophysics, 633, A84 }, (2020)}
+\cvitem{}{\aaa, 633, A84}
 
-
-\cventry{5}{Electromagnetic fields and charges in expanding universes}{}{}{}{}
+\cventry{2019}{Electromagnetic fields and charges in expanding universes}{}{}{}{}
 \cvitem{}{\lc, Gustavo E. Romero}
-\cvitem{}{\textit{Physical Review D}, \textbf{99}, 064017, (2019)}
+\cvitem{}{\prd, 99, 064017}
 
-\cventry{4}{A note on geodesics in inhomogeneous expanding spacetimes}{}{}{}{}
+\cventry{2019}{A note on geodesics in inhomogeneous expanding spacetimes}{}{}{}{}
 \cvitem{}{D. Perez, G.E. Romero, \lc, E.M. Guti\'errez.}
-\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{36}, 055002, (2019)}
+\cvitem{}{\cqg, 36, 055002}
 
-\cventry{3}{Is Teleparallel Gravity really equivalent to General Relativity?}{}{}{}{}
+\cventry{2018}{Is Teleparallel Gravity really equivalent to General Relativity?}{}{}{}{}
 \cvitem{}{\lc, Gustavo E. Romero.}
-\cvitem{}{\textit{Annalen der Physik}, 1700175, (2018)}
+\cvitem{}{Annalen der Physik, 1700175}
 
-\cventry{2}{Gravitational energy and radiation of a charged black hole}{}{}{}{}
+\cventry{2017}{Gravitational energy and radiation of a charged black hole}{}{}{}{}
 \cvitem{}{\lc, Gustavo E. Romero.}
-\cvitem{}{\textit{Classical and  Quantum Gravity}, \textbf{34}, 195008, (2017)}
+\cvitem{}{\cqg, 34, 195008}
 
-\cventry{1}{Inconsistency within the Everett interpretation of Quantum Mechanics}{}{}{}{}
+\cventry{2017}{Inconsistency within the Everett interpretation of Quantum Mechanics}{}{}{}{}
 \cvitem{}{\lc, Gustavo E. Romero.}
-\cvitem{}{\textit{Methateoria} (ISSN 1853-2322) \textbf{7}, 47-53, (2017)}
+\cvitem{}{Methateoria (ISSN 1853-2322) 7, 47-53}
 
 \
 
@@ -337,15 +360,15 @@ I am a relativistic astrophysicist interested in the violent phenomena that occu
 \subsection{\underline{Telegrams}}
 
 \cventry{3}{A new Glitch in the Vela Pulsar (PSR B0833-45/PSR J0835-4510)}{}{}{}{}
-\cvitem{}{FV Sosa-Fiscella, E Zubieta, S del Palacio, F Garcia, FA Lopez-Armengol, JA Combi, CO Lousto, G Gancio, L Combi, E Gutierrez, A Simaz Bunzel, F Hauscarriaga, on behalf of the PuMA Collaboration}
+\cvitem{}{V Sosa-Fiscella, E Zubieta, S del Palacio, F Garcia, FA Lopez-Armengol, JA Combi, CO Lousto, G Gancio, \lc, E Gutierrez, A Simaz Bunzel, F Hauscarriaga, on behalf of the PuMA Collaboration}
 \cvitem{}{\textit{The Astronomer's Telegram}, \textbf{14806}, 2021}
 
 \cventry{2}{Radio observations following the recent glitch of Vela Pulsar (PSR B0833-45)}{}{}{}{}
-\cvitem{}{F. G. Lopez Armengol, C. O. Lousto, S. del Palacio , F. Garcia, L. Combi, J. A. Combi , G. Gancio , A. L. Mueller, P. Kornecki, on behalf of the PuMA Collaboration}
+\cvitem{}{F. G. Lopez Armengol, C. O. Lousto, S. del Palacio , F. Garcia, \lc , J. A. Combi , G. Gancio , A. L. Mueller, P. Kornecki, on behalf of the PuMA Collaboration}
 \cvitem{}{\textit{The Astronomer's Telegram}, \textbf{12482}, 2019}
 
 \cventry{1}{Follow up of the radio flare from the magnetar XTE J1810-197 at 1.4 GHz}{}{}{}{}
-\cvitem{}{Del Palacio, S.; Garcia, F.; Combi, L.; Lopez Armengol, F.; Gancio, G.; Muller, A. L.; Kornecki, P., on behalf of the PuMA Collaboration}
+\cvitem{}{Del Palacio, S.; Garcia, F.; \lc ; Lopez Armengol, F.; Gancio, G.; Muller, A. L.; Kornecki, P., on behalf of the PuMA Collaboration}
 \cvitem{}{\textit{The Astronomer's Telegram}, \textbf{12323}, 2018}
 
 
